@@ -1,0 +1,20 @@
+%{
+
+%}
+
+
+%%
+
+[a-z]+ { printf ("Identificador Minúsculo: ")};
+
+%%
+
+int yywrap()
+{
+    return 1;
+}
+
+int main()
+{
+    yylex();
+}
